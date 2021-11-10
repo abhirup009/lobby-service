@@ -49,6 +49,8 @@ dependencies {
 	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.7")
 	implementation("org.postgresql:postgresql:$postgreSqlJdbcVersion")
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
+	implementation("org.springframework.cloud:spring-cloud-sleuth-zipkin")
+	implementation("org.springframework.cloud:spring-cloud-starter-sleuth")
 	jooqGeneratorRuntime("org.postgresql:postgresql:$postgreSqlJdbcVersion")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
