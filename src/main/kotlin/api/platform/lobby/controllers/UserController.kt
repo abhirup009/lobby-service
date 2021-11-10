@@ -10,13 +10,13 @@ class UserController(
     val userManager: UserManager
 ) {
     @PostMapping(LobbyEndpoints.Base)
-    fun newDepartment(
+    fun newUser(
         @RequestBody prospectiveUser: ProspectiveUser
     ): ProspectiveUser =
         userManager.newUser(prospectiveUser = prospectiveUser)
 
     @GetMapping(LobbyEndpoints.Base)
-    fun getDepartmentDetails(
+    fun getUserDetails(
         @RequestParam(value = LobbyEndpoints.UserIdParam, required = true)
         prospectiveUserId: String
     ): ProspectiveUser =
